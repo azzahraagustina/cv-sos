@@ -6,30 +6,48 @@
     <title>CV Administrator - PT Informatika Itenas</title>
     <style>
         :root {
-            --primary: #004a99;
-            --secondary: #ff6600;
+            --primary: #004a99; /* Biru Itenas */
+            --secondary: #ff6600; /* Oranye aksen */
             --bg: #f4f7f9;
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: #333; margin: 0; padding: 40px 20px; }
         .container { max-width: 850px; background: white; margin: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-wrap: wrap; }
+        
         .sidebar { background: var(--primary); color: white; padding: 40px; flex: 1; min-width: 250px; text-align: center; }
-        .sidebar h1 { margin: 10px 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid rgba(255,255,255,0.2); object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .sidebar h1 { margin: 10px 0; font-size: 1.6em; text-transform: uppercase; letter-spacing: 2px; line-height: 1.2; }
+        
+        /* Styling Foto Profil Agar Bulat Sempurna */
+        .profile-img { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            border: 5px solid rgba(255,255,255,0.3); 
+            object-fit: cover; 
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
         .main-content { padding: 40px; flex: 2; min-width: 300px; }
         .section { margin-bottom: 30px; }
         .section-title { font-size: 1.2em; font-weight: bold; color: var(--primary); border-bottom: 2px solid var(--secondary); display: inline-block; margin-bottom: 15px; padding-right: 20px; }
+        
         ul { list-style: none; padding: 0; }
         li { margin-bottom: 10px; padding-left: 25px; position: relative; }
         li::before { content: '✔'; position: absolute; left: 0; color: var(--secondary); font-weight: bold; }
-        .contact-info p { margin: 5px 0; font-size: 0.9em; }
+        
+        .contact-info p { margin: 8px 0; font-size: 0.9em; opacity: 0.9; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <img src="https://thumbnail0.googleusercontent.com/docs/1TC7WS7yMky8q8xB3lEBdyfC7s-qhZrQW" alt="AZ" class="profile-img">
+            <img src="https://lh3.googleusercontent.com/d/1TC7WS7yMky8q8xB3lEBdyfC7s-qhZrQW" alt="Foto Az-Zahra" class="profile-img">
+    
             <h1>AZ-ZAHRA AGUSTINA</h1>
-            <p>System Administrator</p>
+            <p style="font-weight: 300; opacity: 0.8;">System Administrator</p>
             <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 20px 0;">
             <div class="contact-info">
                 <p><strong>NRP:</strong> 152024134</p>
@@ -37,23 +55,28 @@
                 <p><strong>Lokasi:</strong> Bandung, Indonesia</p>
             </div>
         </div>
+        
         <div class="main-content">
             <div class="section">
                 <div class="section-title">Pendidikan</div>
                 <p><strong>S1 Teknik Informatika</strong><br>Institut Teknologi Nasional Bandung (ITENAS)</p>
             </div>
+
             <div class="section">
                 <div class="section-title">Keahlian Teknis</div>
                 <ul>
                     <li>Konfigurasi Server <strong>openEuler Linux</strong></li>
-                    <li>Manajemen User & File Permissions</li>
-                    <li>Implementasi <strong>SSH Server</strong></li>
-                    <li>Web Server Configuration</li>
+                    <li>Manajemen User, Group, & File Permissions</li>
+                    <li>Implementasi Keamanan <strong>SSH Server</strong></li>
+                    <li>Web Server Management (Apache)</li>
+                    <li>Version Control (Git & GitHub)</li>
                 </ul>
             </div>
+
             <div class="section">
                 <div class="section-title">Pengalaman Proyek</div>
                 <p><strong>Administrator Server PT Informatika Itenas Jaya</strong></p>
+                <p style="font-size: 0.85em; color: #666;">Mengelola infrastruktur server internal berbasis openEuler.</p>
             </div>
         </div>
     </div>
