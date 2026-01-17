@@ -18,12 +18,14 @@
         .sidebar h1 { margin: 10px 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px; }
         .sidebar p { opacity: 0.8; font-weight: 300; }
         
-        /* Profile Initial Circle */
+        /* Profile Image Styling */
         .profile-img { 
-            width: 120px; height: 120px; background: white; color: var(--primary); 
-            border-radius: 50%; margin: 0 auto 20px; display: flex; 
-            align-items: center; justify-content: center; font-size: 3.5em; 
-            font-weight: bold; border: 5px solid rgba(255,255,255,0.2);
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            border: 5px solid rgba(255,255,255,0.2); 
+            object-fit: cover; 
+            margin-bottom: 20px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         
@@ -43,9 +45,7 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="<img src="https://thumbnail0.googleusercontent.com/docs/1TC7WS7yMky8q8xB3lEBdyfC7s-qhZrQW" 
-     alt="Foto Profil" 
-     style="width: 150px; height: 150px; border-radius: 50%; border: 5px solid rgba(255,255,255,0.2); object-fit: cover; margin-bottom: 20px;">">AZ</div>
+            <img src="https://thumbnail0.googleusercontent.com/docs/1TC7WS7yMky8q8xB3lEBdyfC7s-qhZrQW" alt="Foto Profil AZ" class="profile-img">
     
             <h1>AZ-ZAHRA AGUSTINA</h1>
             <p>System Administrator</p>
