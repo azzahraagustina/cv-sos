@@ -5,39 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Administrator - PT Informatika Itenas</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 20px; }
-        header { border-bottom: 2px solid #0056b3; padding-bottom: 10px; margin-bottom: 20px; }
-        h1 { color: #0056b3; margin: 0; }
-        .section { margin-bottom: 20px; }
-        .section-title { font-weight: bold; font-size: 1.2em; color: #0056b3; border-left: 4px solid #0056b3; padding-left: 10px; }
-        ul { padding-left: 20px; }
+        :root {
+            --primary: #004a99; /* Biru Itenas */
+            --secondary: #ff6600; /* Oranye aksen */
+            --bg: #f4f7f9;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: #333; margin: 0; padding: 40px 20px; }
+        .container { max-width: 850px; background: white; margin: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-wrap: wrap; }
+        
+        /* Sidebar/Header area */
+        .sidebar { background: var(--primary); color: white; padding: 40px; flex: 1; min-width: 250px; text-align: center; }
+        .sidebar h1 { margin: 10px 0; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px; }
+        .sidebar p { opacity: 0.8; font-weight: 300; }
+        
+        /* Content area */
+        .main-content { padding: 40px; flex: 2; min-width: 300px; }
+        .section { margin-bottom: 30px; }
+        .section-title { font-size: 1.2em; font-weight: bold; color: var(--primary); border-bottom: 2px solid var(--secondary); display: inline-block; margin-bottom: 15px; padding-right: 20px; }
+        
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        li::before { content: '✔'; position: absolute; left: 0; color: var(--secondary); font-weight: bold; }
+        
+        .contact-info p { margin: 5px 0; font-size: 0.9em; }
+        .contact-info strong { color: var(--primary); }
     </style>
 </head>
 <body>
-    <header>
-        <h1>NAMA LENGKAP KAMU</h1>
-        <p>System Administrator | NIM: 123456789</p>
-    </header>
+    <div class="container">
+        <div class="sidebar">
+            <div style="width: 120px; height: 120px; background: rgba(255,255,255,0.2); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 3em;">👤</div>
+            <h1>Az-Zahra Agustina</h1>
+            <p>System Administrator</p>
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 20px 0;">
+            <div class="contact-info">
+                <p><strong>NIM:</strong> 152024134</p>
+                <p><strong>Email:</strong> az-zahra.agustina@mhs.itenas.ac.id</p>
+                <p><strong>Lokasi:</strong> Bandung, Indonesia</p>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="section">
+                <div class="section-title">Pendidikan</div>
+                <p><strong>S1 Teknik Informatika</strong><br>Institut Teknologi Nasional Bandung (ITENAS)</p>
+                <p style="font-size: 0.85em; color: #666;">Fokus pada Sistem Operasi dan Administrasi Jaringan Server.</p>
+            </div>
 
-    <div class="section">
-        <p class="section-title">Pendidikan</p>
-        <p>S1 Informatika - Institut Teknologi Nasional Bandung (ITENAS)</p>
-    </div>
+            <div class="section">
+                <div class="section-title">Keahlian Teknis</div>
+                <ul>
+                    <li>Konfigurasi Server <strong>openEuler Linux</strong></li>
+                    <li>Manajemen User, Group, & File Permissions</li>
+                    <li>Implementasi Keamanan <strong>SSH Server</strong></li>
+                    <li>Web Server Management (Apache/Nginx)</li>
+                    <li>Version Control menggunakan <strong>Git & GitHub</strong></li>
+                </ul>
+            </div>
 
-    <div class="section">
-        <p class="section-title">Keahlian</p>
-        <ul>
-            <li>Administrasi Server Linux (openEuler, Ubuntu)</li>
-            <li>Manajemen Jaringan & SSH</li>
-            <li>Web Server Configuration (Apache/Nginx)</li>
-            <li>Shell Scripting</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <p class="section-title">Kontak</p>
-        <p>Email: nama.kamu@mhs.itenas.ac.id</p>
-        <p>LinkedIn: linkedin.com/in/namakamu</p>
+            <div class="section">
+                <div class="section-title">Pengalaman Proyek</div>
+                <p><strong>Administrator Server PT Informatika Itenas Jaya</strong></p>
+                <p style="font-size: 0.85em; color: #666;">Mengelola infrastruktur server internal perusahaan menggunakan Linux berbasis openEuler untuk kebutuhan operasional harian.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
